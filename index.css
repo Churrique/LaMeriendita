@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital@1&family=Cabin:ital@1&family=Space+Grotesk&display=swap');
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-decoration: none;
+}
+body {
+  font-family: 'Space Grotesk', 'Cabin', 'Barlow Condensed', sans-serif;
+}
+footer {
+  position: fixed;
+  bottom: 4em;
+  width: 100%;
+  text-align: center;
+}
+#gradien {
+  background-image: linear-gradient(to bottom right, #BB5F6F, #FC74BC, #FCE374, #FCCAEB, #FC9D2D, #F5C257, #B4945C);
+}
+#banner {
+  display: flex;
+  flex-direction: row;
+  /*gap: 2rem;*/
+  margin-top: 3rem;
+  justify-content: center;
+}
+#webunderconstruction {
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+#wuc {
+  display: flex;
+  flex-direction: column;
+}
+#header_logo {
+  width: 2rem;
+  height: 2rem;
+}
+#headline_title {
+  width: 50%;
+  height: 50%;
+}
+#corps {
+  /*background: url("/svg/Painter-Model-3.svg") no-repeat content-box fixed;*/
+  background-color: #ac8e59;
+  background-image: url("/svg/Painter-Model-4.svg");
+  background-position: center;
+  background-size: 80% 80%; /* auto|length|cover|contain|initial|inherit */
+  background-repeat: no-repeat; /* repeat|repeat-x|repeat-y|no-repeat|initial|inherit */
+  background-origin: content-box; /* padding-box|border-box|content-box|initial|inherit */
+  background-clip: padding-box; /* border-box|padding-box|content-box|initial|inherit */
+  background-attachment: fixed; /* scroll|fixed|local|initial|inherit */
+  /*
+  background-position:
+  left top
+  left center
+  left bottom
+  right top
+  right center
+  right bottom
+  center top
+  center center
+  center bottom	If you only specify one keyword, the other value will be "center"
+  x% y%	The first value is the horizontal position and the second value is the vertical. The top left corner is 0% 0%. The right bottom corner is 100% 100%. If you only specify one value, the other value will be 50%. Default value is: 0% 0%
+  xpos ypos	The first value is the horizontal position and the second value is the vertical. The top left corner is 0 0. Units can be pixels (0px 0px) or any other CSS units. If you only specify one value, the other value will be 50%. You can mix % and positions
+  initial	Sets this property to its default value. Read about initial
+  inherit	Inherits this property from its parent element. Read about inherit
+  */
+}
