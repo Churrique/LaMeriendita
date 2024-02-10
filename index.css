@@ -11,10 +11,14 @@ body {
   font-family: 'Space Grotesk', 'Cabin', 'Barlow Condensed', sans-serif;
 }
 footer {
+  display: flex;
+  flex-direction: row;
   position: fixed;
-  bottom: 4em;
+  bottom: 1em;
   width: 100%;
+  height: 5em;
   text-align: center;
+  justify-content: center;
 }
 #gradien {
   background-image: linear-gradient(to bottom right, #BB5F6F, #FC74BC, #FCE374, #FCCAEB, #FC9D2D, #F5C257, #B4945C);
@@ -22,8 +26,7 @@ footer {
 #banner {
   display: flex;
   flex-direction: row;
-  /*gap: 2rem;*/
-  margin-top: 3rem;
+  margin-top: 3em;
   justify-content: center;
 }
 #webunderconstruction {
@@ -36,37 +39,47 @@ footer {
   flex-direction: column;
 }
 #header_logo {
-  width: 2rem;
-  height: 2rem;
+  width: 3vw;
+  height: 3vh;
 }
 #headline_title {
   width: 50%;
   height: 50%;
 }
+#info {
+  height: 3vh;
+  width: 3vw;
+  cursor: pointer;
+}
 #corps {
-  /*background: url("/svg/Painter-Model-3.svg") no-repeat content-box fixed;*/
-  background-color: #ac8e59;
+  background-color: #AC8E59;
   background-image: url("/svg/Painter-Model-4.svg");
-  background-position: center;
-  background-size: 80% 80%; /* auto|length|cover|contain|initial|inherit */
+  background-position: center; /* left top|left center|left bottom|right top|right center|right bottom|center top|center center|center bottom|ÇÇ	 */
+  background-size: 75% 75%; /* auto|length|cover|contain|initial|inherit */
   background-repeat: no-repeat; /* repeat|repeat-x|repeat-y|no-repeat|initial|inherit */
   background-origin: content-box; /* padding-box|border-box|content-box|initial|inherit */
   background-clip: padding-box; /* border-box|padding-box|content-box|initial|inherit */
   background-attachment: fixed; /* scroll|fixed|local|initial|inherit */
-  /*
-  background-position:
-  left top
-  left center
-  left bottom
-  right top
-  right center
-  right bottom
-  center top
-  center center
-  center bottom	If you only specify one keyword, the other value will be "center"
+  /* ÇÇ If you only specify one keyword, the other value will be "center"
   x% y%	The first value is the horizontal position and the second value is the vertical. The top left corner is 0% 0%. The right bottom corner is 100% 100%. If you only specify one value, the other value will be 50%. Default value is: 0% 0%
   xpos ypos	The first value is the horizontal position and the second value is the vertical. The top left corner is 0 0. Units can be pixels (0px 0px) or any other CSS units. If you only specify one value, the other value will be 50%. You can mix % and positions
   initial	Sets this property to its default value. Read about initial
   inherit	Inherits this property from its parent element. Read about inherit
   */
+}
+.hiddentext {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  bottom: 0.1em;
+  left: 35.5%;
+  padding: 0 .5em;
+  transition: opacity 0.5s ease-in-out;
+}
+.icono:hover + .hiddentext {
+  visibility: visible;
+  opacity: 1;
+  font-size: .8em;
+  font-style: italic;
+  font-weight: bold;
 }
