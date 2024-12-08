@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital@1&family=Cabin:ital@1&family=Space+Grotesk&display=swap');
+//
+// PALETA UNO
+//
+$Sombra-Oscura-De-Rojo: #343131; //SOMBRA OSCURA DE ROJO
+$Sombra-De-Rojo: #a04747; //SOMBRA DE ROJO
+$Sombra-Claro-Medio-De-Marron: #d8a25e; //SOMBRA CLARO MEDIO DE MARRÓN
+$Sombra-Claro-Medio-De-Amarillo: #eedf7a; //SOMBRA CLARO MEDIO DE AMARILLO
+
+// Derivados de la SOMBRA OSCURA DE ROJO
+// Muy relacionado
+$Gris-Sombra: #332f2c;
+$Pardo-Grisaceo: #403a3a;
+$Negro-Seniales: #282828;
+$Gris-Antracita: #293133;
+$Gris-Granito: #2f353b;
+//Medianamente relacionados
+$Fucsia: #e30052;
+$Gris-Polvo: #7d7f7d;
+$Gris-Oliva: #7e7b52;
+$Almagre: #dc2d22;
+$Cesizo: #808080;
+//Lejanamente relacionados
+$Crema: #ffffbf;
+$Amarillo: #ffff00;
+$Blanco-De-Cinc: #fafbfd;
+$Lemon-Chiffon: #fffacd;
+$Amarillo-Azufre: #edff21;
+
+// Derivados de la SOMBRA DE ROJO
+// Muy relacionado
+$Rosa-Perlado: #b44b43;
+$Granate: #ab2a3e;
+$Cardinal: #c41e3a;
+$Rojo-Oriente: #b32428;
+$Rojo-Frambuesa: #c51d34;
+// Medianamente relacionados
+$Amarillo-Pastel: #efa94a;
+$Azul-Cobalto: #333c87;
+$Zafiro: #6576b4;
+$Naranja-Claro-Brillante: #ffa420;
+$Amarillo-Dalia: #f3a505;
+// Lajanamente relacionados
+$Ghost-White: #f8f8ff;
+$Blanco-Seniales: #f4f4f4;
+$Blanco-Trafico: #f6f6f6;
+$Blanco: #ffffff;
+
+// Derivados de la SOMBRA CLARO MEDIO DE MARRÓN
+// Muy relacionado
+$Ambar: #e2943a;
+$Amarillo-Arena: #c6a664;
+$Amarillo-Pastel: #efa94a;
+$Fallow: #c19a6b;
+$Amarillo-Indio: #f5973d;
+// Medianamente relacionados
+$Thistle: #d8bfd8;
+$Carmin: #c30b4e;
+$Cobre-Perlado: #763c28;
+$Gris-Cuarzo: #6c6960;
+$Verde-Helecho: #3d642d;
+// Lejanamente relacionados
+$Negro-Intenso: #0a0a0a;
+$Carbon: #191919;
+
+// Derivados de la SOMBRA CLARO MEDIO DE AMARILLO
+// Muy relacionado
+$Aureolina: #ffe65d;
+$Marfil-Claro: #e6d690;
+$Amarillo-Napoles: #eccd6a;
+$Junquillo: #efd52e;
+$Marfil: #e1cc4f;
+// Medianamente relacionados
+$Rojo-Puro: #cb3234;
+$Pardo-Beige: #79553d;
+$Verde-Ceniza: #5f7f7a;
+$Gris-Plata: #8a9597;
+$Gris-Hormigon: #686c5e;
+// Lejanamente relacionados
+$Negro-Intenso: #0a0a0a;
+$Duke-Blue: #001a57;
+$Carbon: #191919;
+$Azul-Negruzco: #18171c;
+$Negro-Grafito: #1c1c1c;
+
+//Variaciones
+$Olive: #808000;
+$Sandybrown: #f4a460;
+$Brown: #a52a2a;
+$Red: #ff0000;
+$Maroon: #800000;
+$Darkslategray: #2f4f4f;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+}
+body {
+  background-color: $Amarillo-Napoles;
+  color: $Negro-Seniales;
+  overflow: scroll;
+  text-overflow: ellipsis;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'Cabin', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
+}
+h1, h2, article {
+  margin: 1rem 0%;
+}
+h1, h2 {
+  text-align: center;
+}
+h2 {
+  padding-top: .25rem;
+  height: 2.5rem;
+}
+li {
+  margin-left: 2rem;
+}
+p {
+  background-color: $Carbon;
+  color: $Blanco-Trafico;
+  padding: 1rem;
+  line-height: 1.5rem;
+  border-radius: .5rem;
+}
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: $Sombra-Oscura-De-Rojo;
+  color: $Sombra-Claro-Medio-De-Amarillo;
+  text-align: center;
+  padding: 10px 0;
+  z-index: 1000; /* Asegura que el encabezado esté por encima de otros elementos */
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 50px; /* Altura del footer */
+  background-color: $Sombra-Oscura-De-Rojo;
+  color: $Sombra-Claro-Medio-De-Marron;
+  text-align: center;
+  line-height: 50px; /* Centrar el texto verticalmente */
+  z-index: 1000; /* Asegura que el footer esté por encima de otros elementos */
+}
+a, a:hover, a:active {
+  text-decoration: none;
+  cursor: pointer;
+  color: $Sombra-Claro-Medio-De-Amarillo;
+}
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+.content {
+  margin-top: 50px; /* Ajusta el margen superior para evitar que el contenido se superponga con el encabezado */
+  margin-bottom: 50px; /* Ajusta el margen inferior para evitar que el contenido se superponga con el footer */
+  min-height: calc(100vh - 100px); /* Ajusta 100px al tamaño del encabezado y el footer */
+}
+.rouneded-corner {
+  border-radius: .5rem;
+}
+.red-shadow {
+  background-color: $Almagre;
+  color: $Blanco-De-Cinc;
+}
+.yellow-shadow {
+  background-color: $Aureolina;
+  color: $Negro-Intenso;
+}
+.width-percentage-90 {
+  width: 90%;
+}
+.flex-row-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+}
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.four-side-red-border {
+  border: 2px solid $Sombra-De-Rojo;
+}
+.left-hand-red-border {
+  border-left: 2px solid $Sombra-De-Rojo;
+}
