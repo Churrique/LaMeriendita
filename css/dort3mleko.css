@@ -82,6 +82,14 @@ a:visited {
   text-decoration: none;
 }
 
+.container {
+  background-color: #fff;
+  padding: 20px40px;
+  border-radius: 8px;
+  box-shadow: 4px8pxrgba 0, 0, 0, 0.1;
+  text-align: center;
+}
+
 .content {
   margin-top: 50px; /* Ajusta el margen superior para evitar que el contenido se superponga con el encabezado */
   margin-bottom: 50px; /* Ajusta el margen inferior para evitar que el contenido se superponga con el footer */
@@ -126,4 +134,4 @@ a:visited {
 
 .left-hand-red-border {
   border-left: 2px solid #a04747;
-}
+}/*# sourceMappingURL=dort3mleko.css.map */

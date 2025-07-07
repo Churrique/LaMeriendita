@@ -40,9 +40,18 @@
     <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
   </head>
   <body>
+
+      <div class="container">
+        <p>Ancho de la pantalla: <strong id="screenWidth"></strong> px</p>
+        <p>Alto de la pantalla: <strong id="screenHeight"></strong> px</p>
+        <p>Ancho de la ventana (viewport): <strong id="windowWidth"></strong> px</p>
+        <p>Alto de la ventana (viewport): <strong id="windowHeight"></strong> px</p>
+      </div>
+    
+    
     <header>
       <nav class="flex-row-container">
-        Secciones más relevantes:
+        <!--Secciones más relevantes:-->
         <a href="#Sec-Ingredientes">Ingredientes</a>
         <a href="#Sec-Elaboracion">Elaboración</a>
         <a href="#Sec-Alergenos">Alérgenos</a>
@@ -174,5 +183,30 @@
     <footer>
       IMPORTANTE: Contiene lactosa, gluten y huevo...! <a rel="noopener" href="https://es.wikipedia.org/wiki/Tres_leches" target="_blank">WIKIPEDIA</a>
     </footer>
+
+    <script>
+        function updateScreenDimensions() {
+            // Dimensiones de la pantalla (resolución del dispositivo)
+            const screenWidth = window.screen.width;
+            const screenHeight = window.screen.height;
+
+            // Dimensiones de la ventana del navegador (viewport)
+            // Esto es el área visible del contenido web, sin incluir barras de desplazamiento, herramientas del navegador, etc.
+            const windowWidth = window.innerWidth;
+            const windowHeight = window.innerHeight;
+
+            document.getElementById('screenWidth').textContent = screenWidth;
+            document.getElementById('screenHeight').textContent = screenHeight;
+            document.getElementById('windowWidth').textContent = windowWidth;
+            document.getElementById('windowHeight').textContent = windowHeight;
+        }
+
+        // Ejecutar la función cuando la página se carga
+        window.onload = updateScreenDimensions;
+
+        // También actualizar las dimensiones si la ventana cambia de tamaño
+        window.addEventListener('resize', updateScreenDimensions);
+    </script>
+  
   </body>
 </html>
