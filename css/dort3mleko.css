@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 16px;
+}
+
 html, body {
   height: 100%;
 }
@@ -16,8 +20,10 @@ body {
   overflow: scroll;
   text-overflow: ellipsis;
   font-family: "Barlow Condensed", sans-serif;
-  font-family: "Cabin", sans-serif;
-  font-family: "Space Grotesk", sans-serif;
+  /*  font-family: 'Cabin', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
+  */
+  font-size: 1em;
 }
 
 h1, h2, article {
@@ -134,4 +140,21 @@ a:visited {
 
 .left-hand-red-border {
   border-left: 2px solid #a04747;
+}
+
+@media (max-width: 947px) {
+  body {
+    font-size: 14px;
+  }
+  div {
+    height: 120px;
+    /* Posiblemente ajustar otras propiedades relacionadas con la altura/diseño de tus divs */
+  }
+  /* Si necesitas ajustar elementos específicos dentro de los divs, puedes hacerlo aquí */
+  /* Por ejemplo: */
+  /*
+  div p {
+    line-height: 1.5;
+  }
+  */
 }/*# sourceMappingURL=dort3mleko.css.map */
